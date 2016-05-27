@@ -1,0 +1,28 @@
+{
+  "name": "kontainers",
+  "version": "1.0.0",
+  "description": "data containers for javascript",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marbaj/kontainers.git"
+  },
+  "keywords": [
+    "util"
+  ],
+  "author": "Marko Bajic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marbaj/kontainers/issues"
+  },
+  "homepage": "https://github.com/marbaj/kontainers#readme",
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
+}
