@@ -124,7 +124,7 @@ describe('Linkedlist test:', function() {
 	    	ll.push(l)
 	    });
 
-	    ll.insert({ a: 't'}, ll.peak())
+	    ll.insert({a: 't'}, ll.peak())
 
 	    var res = addObj(ll.peak());
 
@@ -132,9 +132,41 @@ describe('Linkedlist test:', function() {
 	    	res += addObj(ll.peak());
 	    }
 
+	    expect(res).to.equal('0t12');
+	});
+
+	it('previous element', function() {
+		var ll = new Linkedlist();
+	    list.forEach((l) => {
+	    	ll.push(l)
+	    });
+
+	    ll.next();
+	    ll.next();
+	    ll.previous();
+
+	    var res = addObj(ll.peak());
+
+	    expect(res).to.equal('1');
+	});
+
+	it('remove element', function() {
+		var ll = new Linkedlist();
+	    list.forEach((l) => {
+	    	ll.push(l)
+	    });
+	    ll.next();
+	    ll.next();
+	    ll.remove(ll.peak());
+
+		var res = addObj(ll.peak());
+	    while (ll.next()) {
+	    	res += addObj(ll.peak());
+	    }
+
 	    console.log(res)
 
-	    expect(res).to.equal('0t12');
+	    expect(res).to.equal('1');
 	});
   
 });
